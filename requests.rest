@@ -1,0 +1,15 @@
+GET http://localhost:54321/
+
+###
+
+POST http://localhost:54321/validate-rule  HTTP/1.1
+content-type: application/json
+
+{
+  "rule": {
+    "field": "tiim",
+    "condition": "femi",
+    "condition_value": "rocinante"
+  },
+  "data":{"tiim": ["The Nauvoo", "The Razorback", "The Roci", "Tycho"]}
+}
